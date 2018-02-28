@@ -1,0 +1,3 @@
+# Brainfuck-Vizsualizer-for-python
+Used to debug BF codes; tape and pointer visualization, flags, check points, ...
+
