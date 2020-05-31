@@ -150,9 +150,8 @@ def brainFuckInterpreter(code, prog):
 
         # Vizualisation commands/executions
         #--------------------
-        elif c[0] == '?' and not (ALL or SWITCH): updateVizu(c)     # check point found
-        if ALL or SWITCH: updateVizu(c)                             # Vizualisation for swithes (avoid double printing for check points)
-        if c[0] == '!': SWITCH = not SWITCH                         # Update '!' swtich state
+        elif c[0] == '?' or ALL or SWITCH: updateVizu(c)
+        if c[0] == '!':                    SWITCH = not SWITCH
         #--------------------
 
         i += 1
