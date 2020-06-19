@@ -167,7 +167,7 @@ def runTests(inputs, exp, code):
         print("Input: ", p)
         act = brainFuckInterpreter(code, p+EOF)
 
-        print("Input: ", p)                        # remainder of the input
+        print("Input: ", p)                                    # reminder of the input
         print(repr(act), " should be ", repr(e))               # print actual/expected before assertion
         assert act == e
 
